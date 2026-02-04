@@ -45,6 +45,7 @@ The dataset is released under the **Creative Commons Attribution 4.0 (CC BY 4.0)
 If you use this dataset in your work, please cite **both** the dataset and the associated article.  
 A BibTeX entry for the article is provided below and will be updated once the paper is published.
 
+```bibtex
 @article{Bechis2026RCNNLiDAR,
   title   = {Recurrent Convolutional Neural Networks for LiDAR-Based Pose Initialization of Spinning Spacecrafts},
   author  = {Bechis, Luca and Sarvadon, Jean-Luc and Ricioppo, Petre and Mancini, Mauro},
@@ -52,3 +53,4 @@ A BibTeX entry for the article is provided below and will be updated once the pa
   year    = {2026},
   note    = {Manuscript under review}
 }
+```
