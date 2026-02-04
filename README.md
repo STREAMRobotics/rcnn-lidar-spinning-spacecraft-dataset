@@ -1,56 +1,71 @@
-# Dataset for “Recurrent Convolutional Neural Networks for LiDAR-Based Pose Initialization of Spinning Spacecrafts”
+# LiDAR-Based Pose Initialization Dataset for Spinning Spacecrafts
 
-🚀 **Official Dataset DOI:**  
-👉 **https://doi.org/10.5281/zenodo.18477119**
+This repository contains the datasets used in the paper:
 
----
-
-This repository provides access to the dataset used in the article:
-
-**Recurrent Convolutional Neural Networks for LiDAR-Based Pose Initialization of Spinning Spacecrafts**
-
+**Recurrent Convolutional Neural Networks for LiDAR-Based Pose Initialization of Spinning Spacecrafts**  
 Luca Bechis, Jean-Luc Sarvadon, Petre Ricioppo, Mauro Mancini  
-Department of Mechanical and Aerospace Engineering, Politecnico di Torino, Italy
+Department of Mechanical and Aerospace Engineering, Politecnico di Torino
 
 ---
 
 ## Dataset Description
-The dataset is fully synthetic and generated from scratch.
 
-It consists of two main components:
-- **Image Dataset**: image-based LiDAR representations
-- **Sequence Dataset**: temporal LiDAR scan sequences for recurrent neural network training
+The dataset has been entirely generated from scratch by the authors and is designed for training and evaluating recurrent convolutional neural networks for LiDAR-based pose initialization of spinning spacecraft.
 
-The dataset includes data generated for three different spacecraft models:
-- Aquarius
-- Magellan
-- NEAR Shoemaker
+It is composed of two main components:
 
-Due to its large size, the complete dataset is hosted on **Zenodo**.
+- **Image Dataset**  
+- **Sequence Dataset**
 
----
+Each dataset includes data from three different spacecraft models:
 
-## Dataset Access
-📌 **Zenodo DOI:**  
-👉 **https://doi.org/10.5281/zenodo.18477119**
+- **Aquarius**
+- **Magellan**
+- **NEAR Shoemaker**
+
+The data are provided as compressed archives due to their size (several gigabytes).
 
 ---
 
-## License
-The dataset is released under the **Creative Commons Attribution 4.0 (CC BY 4.0)** license.
+## Dataset Structure
+The dataset is organized as follows:
+
+- `image_dataset.zip` – single-frame LiDAR data
+  - `Aquarius/`
+  - `Magellan/`
+  - `NEAR_Shoemaker/`
+
+- `sequence_dataset.zip` – temporal sequences for recurrent models
+  - `Aquarius/`
+  - `Magellan/`
+  - `NEAR_Shoemaker/`
+
+
+Each folder contains simulated LiDAR data generated under controlled conditions consistent with the experimental setup described in the paper.
+
+---
+
+## Code Availability (Important)
+
+At the time of publication, this repository provides **only the dataset**.
+
+The **code used to generate the datasets and the simulation environment** will be made publicly available **after the acceptance and publication of the associated article**, in order to ensure full reproducibility of the results.
+
+Once released, the code will be integrated into this same repository.
 
 ---
 
 ## Citation
-If you use this dataset in your work, please cite **both** the dataset and the associated article.  
-A BibTeX entry for the article is provided below and will be updated once the paper is published.
+
+If you use this dataset in your work, **cite the associated article**.
+
+### BibTeX (temporary – to be updated upon publication)
 
 ```bibtex
-@article{Bechis2026RCNNLiDAR,
+@article{BechisLiDAR2026,
   title   = {Recurrent Convolutional Neural Networks for LiDAR-Based Pose Initialization of Spinning Spacecrafts},
   author  = {Bechis, Luca and Sarvadon, Jean-Luc and Ricioppo, Petre and Mancini, Mauro},
-  journal = {Submitted for publication},
-  year    = {2026},
-  note    = {Manuscript under review}
+  journal = {To appear},
+  year    = {2026}
 }
 ```
